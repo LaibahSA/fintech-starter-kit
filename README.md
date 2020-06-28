@@ -5,7 +5,7 @@
 
 For this year's challenge we want you to build solutions that can help small businesses to function effectively in the new normal post-COVID. Think outside the box, i.e. don't just emulate existing solutions, but rather try to think of the challenges that small businesses face that no one is solving yet.
 
-This year the entire event will be run remotely on MS Teams. As always business & tech mentors will be available from the sponsors to assist you. Please make use of their expertise.
+This year the entire event will be run remotely on MS Teams. As always business & technology mentors will be available from the sponsors to assist you. Please make use of their expertise.
 
 The event officially starts at 6pm on Friday the 31st of July and ends at 12pm on Sunday the 2nd of August, meaning you'll have 42 hours to complete your solution.
 
@@ -27,7 +27,7 @@ Criteria | Description
 -------- | -----------
 **Concept** | Did the group come up with a good solution to the initial problem or challenge? Did they understand and research the problem? Do they understand their end user's needs?
 **Creativity** | How creative has the group been in solving the challenge? Did they come up with a radical approach, or did they follow existing patterns and solutions? Is this a differentiated idea in some way?
-**Execution** | Does the hack work? Is the hack testable, and can the group show the minimum viable product? The hack does not have to be perfect or production ready, but does the idea come to life with their demo?
+**Execution** | Does the hack work? Is the hack testable and can the group show the minimum viable product? The hack does not have to be perfect or production ready, but does the idea come to life with their demo?
 **Design** | Did the group think about the user interface (UI) and user experience (UX)? How well designed is their demo? How are the graphics, or how is the human-computer interaction? Is it easy to use or does it require a lot of training to master?
 **Business Model / Impact** | Is the idea feasible, does it have economic and societal value, and is it sustainable? Will this be a viable business if the team develops the idea further?
 
@@ -44,14 +44,14 @@ From previous events we'd like to offer you the following tips:
 
 * Don't just focus on your tech solution. Think though the business case of your solution, is it viable? will people use it? who is my target audience?
 
-* Don't code to the last minute, rather reduce your scope lightly to make time to practice your presentation.
+* Don't code until the last minute, rather reduce your scope to make time to practice your presentation.
 
 * A pitching workshop will be held before the event, please do make use of this to develop your skills.
 
 
 ## 3. Starter Kit
 
-At most hackathons a lot of time is wasted in the intials stages setting up projects and making technology choices. To make things a bit easier this year we're providing you with a starter kit to get you up and running as quickly as possible.
+At most hackathons a lot of time is wasted in the initial stages setting up projects and making technology choices. To make things a bit easier this year we're providing you with a starter kit to get you up and running as quickly as possible.
 
 **Note:** It is not mandatory to use this guide. If you have your own project template or want to build your solution in your own way or programming language, then please feel free to do so.
 
@@ -87,28 +87,28 @@ TODO - pages hosting
 
 ## 4. Additional Info
 
-This project is a quick start, and by no means a difinative source of information. Play around with it and make it your own.
+This project is a quick start and by no means a definitive source of information. Play around with it and make it your own.
 
 For interest, the following additional resources may be of use to you:
 
 ### 4.1. IBM Cloud - Serverless Tutorial
 
-This guide is roughly based of the IBM Cloud [Serverless web application and API](
+This guide is based on the IBM Cloud [Serverless web application and API](
 https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-serverless-api-webapp) tutorials. Have a look at the rest of their guide if you are interested.
 
 ### 4.2. IBM Cloud - Service Catalogue
 
-You'll find a host of useful services in the IBM Cloud [Service Catalogue](https://cloud.ibm.com/catalog#services), from AI services to
+You'll find a host of useful services in the IBM Cloud [Service Catalogue](https://cloud.ibm.com/catalog#services), from AI services to different databases and compute resources.
 
 ### 4.3. GitHub Pages - Hosting Static Content
 
-GitHub has added a feature called [GitHub Pages](https://pages.github.com/) to their platform allowing you to publically host your web app directly from the source code in your repository.
+GitHub has added a feature called [GitHub Pages](https://pages.github.com/) to their platform allowing you to publicly host your web app directly from the source code in your repository.
 
-If your project requires dynamic content hosting then consider using the IBM CloudFoundry service.
+If your project requires dynamic content hosting then consider using the [IBM Cloud Foundry](https://www.ibm.com/cloud/cloud-foundry) service.
 
 ### 4.4. Bootstrap 4 - UI Framework
 
-[Bootstrap](https://getbootstrap.com/) is a simple open source responsive UI framework for web applications. It has many pre-defined components and templates. Use the following links to learn more.
+[Bootstrap](https://getbootstrap.com/) is a simple open source responsive UI framework for web applications. It has many predefined components and templates. Use the following links to learn more.
 
 * [Components](https://getbootstrap.com/docs/4.5/components/)
 * [Template Examples](https://getbootstrap.com/docs/4.5/examples/)
@@ -116,7 +116,7 @@ If your project requires dynamic content hosting then consider using the IBM Clo
 
 ### 4.5. Modern Web APIs
 
-The web has in recent years evolved to a point where it can compete head-on and with native applications like you would find on a desktop or smartphone. Web applications has the benefit of allowing you no longer have to build a separate Android, iOS and desktop version of you app. Apps like Slack and VS Code for instance is completely built on web technologies.
+The web has in recent years evolved to a point where it can compete head-on and with native applications like you would find on a desktop or smartphone. Web applications has the benefit of allowing you no longer have to build separate Android, iOS and desktop versions of you app. Apps like Slack and VS Code for instance is completely built on web technologies.
 
 The following links provide some examples of how you can leverage these modern web APIs:
 
