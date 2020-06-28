@@ -1,0 +1,22 @@
+{
+	"name": "fintech-starter-kit",
+	"version": "1.0.0",
+	"description": "![SU Hackathon 2020](readme/template_small.png)",
+	"main": "",
+	"author": "SU Hackathon",
+	"license": "Apache 2.0",
+	"homepage": "https://github.com/SUHackathon/fintech-starter-kit#readme",
+	"scripts": {
+		"web": "http-server -d -c-1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SUHackathon/fintech-starter-kit.git"
+	},
+	"bugs": {
+		"url": "https://github.com/SUHackathon/fintech-starter-kit/issues"
+	},
+	"devDependencies": {
+		"http-server": "^0.12.3"
+	}
+}

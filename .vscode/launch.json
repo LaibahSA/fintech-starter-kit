@@ -5,6 +5,12 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"command": "npm run web",
+			"name": "Start Web Server",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
 			"type": "node",
 			"request": "launch",
 			"name": "Run Service",
