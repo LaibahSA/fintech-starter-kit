@@ -16,7 +16,7 @@ The rest of this guide sets out everything you need to know about the event.
 1. [Judging Criteria](#1-judging-criteria)
 2. [Pitching Tips](#2-pitching-tips)
 3. [Starter Kit](#3-starter-kit)
-9. [Additional Info](#9-additional-info)
+4. [Additional Info](#4-additional-info)
 
 
 ## 1. Judging Criteria
@@ -34,7 +34,7 @@ Criteria | Description
 **Note:** All decisions are final and will not be open to discussion.
 
 
-## 2. Pitcing Tips
+## 2. Pitching Tips
 
 From previous events we'd like to offer you the following tips:
 
@@ -87,22 +87,22 @@ This project is a quick start, and by no means a difinative source of informatio
 
 For interest, the following additional resources may be of use to you:
 
-> **IBM Cloud - Serverless Tutorial**
+### 4.1. IBM Cloud - Serverless Tutorial
 
 This guide is roughly based of the IBM Cloud [Serverless web application and API](
 https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-serverless-api-webapp) tutorials. Have a look at the rest of their guide if you are interested.
 
-> **IBM Cloud - Service Catalogue**
+### 4.2. IBM Cloud - Service Catalogue
 
 You'll find a host of useful services in the IBM Cloud [Service Catalogue](https://cloud.ibm.com/catalog#services), from AI services to
 
-> **GitHub Pages - Hosting Static Content**
+### 4.3. GitHub Pages - Hosting Static Content
 
 GitHub has added a feature called [GitHub Pages](https://pages.github.com/) to their platform allowing you to publically host your web app directly from the source code in your repository.
 
 If your project requires dynamic content hosting then consider using the IBM CloudFoundry service.
 
-> **Bootstrap 4 - UI Framework**
+### 4.4. Bootstrap 4 - UI Framework
 
 [Bootstrap](https://getbootstrap.com/) is a simple open source responsive UI framework for web applications. It has many pre-defined components and templates. Use the following links to learn more.
 
@@ -110,7 +110,7 @@ If your project requires dynamic content hosting then consider using the IBM Clo
 * [Template Examples](https://getbootstrap.com/docs/4.5/examples/)
 * [Full Tutorial - W3schools](https://www.w3schools.com/bootstrap4/default.asp)
 
-> **Modern Web APIs**
+### 4.5. Modern Web APIs
 
 The web has in recent years evolved to a point where it can compete head-on and with native applications like you would find on a desktop or smartphone. Web applications has the benefit of allowing you no longer have to build a separate Android, iOS and desktop version of you app. Apps like Slack and VS Code for instance is completely built on web technologies.
 
@@ -121,6 +121,6 @@ The following links provide some examples of how you can leverage these modern w
 * [Web Payments](https://web.dev/payments/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
 
-> **Mobile Phone Emulation - Chrome**
+### 4.6. Mobile Phone Emulation - Chrome
 
 TODO
