@@ -1,7 +1,7 @@
 ![SU Hackathon 2020](readme/template_small.png)
 
 
-# Welcome to 2020 Stellenbosch University Hackathon
+# Welcome to the 2020 Stellenbosch University Hackathon
 
 For this year's challenge we want you to build solutions that can help small businesses to function effectively in the new normal post-COVID. Think outside the box, i.e. don't just emulate existing solutions, but rather try to think of the challenges that small businesses face that no one is solving yet.
 
@@ -58,7 +58,11 @@ At most hackathons a lot of time is wasted in the intials stages setting up proj
 
 ### 3.1. Overview
 
-You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple single page web applicaiton that will communicate with a 
+You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple single page web applicaiton that will communicate with a serverless function backend & object database hosted on the IBM Cloud.
+
+Serverless functions provide a new compute paradigm that is espcially use full in rapid prototyping environments, as they allow you to develop your application's backend logic as individual blocks of code which run independent of every other block of code in your system. This provides execellent scalability should your hack oneday need to scale up quickly to cater for increased load.
+
+![SU Hackathon 2020](readme/architecture.png)
 
 ### 3.2. Getting Started
 
