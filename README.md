@@ -71,10 +71,19 @@ You can follow the rest of this guide to setup a basic cloud hosted web app. We'
 
 2. Sign up for a [Heroku account](https://signup.heroku.com/) (if you don't have one already).
 
-3. Fork this repository on GitHub by click the "Use this template" button at the top of the page and following the prompts.
+3. Fork this repository on GitHub by click the green "Use this template" button at the top of the page and following the prompts.
 
-4. Open the project in VS Code, open a new terminal window and run the following command to install the project dependencies.
+4. Once done your repository copy will be setup in Github, click the green "Code" button and copy the repository URL
+
+5. Clone the repository to your computer using git in a new terminal window, replacing the url with the one you copied, e.g.:
+```sh
+git clone https://github.com/<your-account-name>/<your-app-name>.git
 ```
+
+6. Step into the folder then install the project dependencies using npm.
+```
+cd <your-app-name>
+
 npm install
 ```
 
@@ -89,21 +98,21 @@ npm install
 
 3. Set the deployment method to GitHub and connect your GitHub account to automate deployment.
 
-4. Link the project repo to your Heroku account.
+4. Link the project repository to your Heroku account.
 
 5. Enable automatic deploys.
 
 
 ### 3.4. Test & Deploy
 
-1. Back in VS Code, change the app title in the web/index.html file to the name of your project.
+1. Open the project folder in VS Code, change the app title in the app/web/index.html file to the name of your project.
 ```html
 <title>My Project Name</title>
 ```
 
 2. Commit the change in VS Code's source control tab.
 
-3. Push the change to the repo on GitHub.
+3. Push the change to the repository on GitHub.
 
 4. The app should automatically deploy within 5-minutes.
 
