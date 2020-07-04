@@ -5,22 +5,13 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"command": "npm run web",
-			"name": "Start Web Server",
+			"name": "Start App",
+			"program": "${workspaceFolder}/app/main.js",
 			"request": "launch",
-			"type": "node-terminal"
-		},
-		{
-			"type": "node",
-			"request": "launch",
-			"name": "Run Service",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/service/main.js",
-			"runtimeArgs": [
-				"--es-module-specifier-resolution=node"
-			]
+			"type": "pwa-node"
 		}
 	]
 }

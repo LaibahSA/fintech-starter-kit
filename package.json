@@ -1,13 +1,17 @@
 {
 	"name": "fintech-starter-kit",
 	"version": "1.0.0",
-	"description": "![SU Hackathon 2020](readme/template_small.png)",
-	"main": "",
+	"description": "A quick guide to get you started with the FinTech challenge.",
+	"main": "app/main.js",
 	"author": "SU Hackathon",
 	"license": "Apache 2.0",
 	"homepage": "https://github.com/SUHackathon/fintech-starter-kit#readme",
+	"type": "module",
+	"engines": {
+		"node": "14.x"
+	},
 	"scripts": {
-		"web": "http-server -d -c-1"
+		"start": "node app/main.js"
 	},
 	"repository": {
 		"type": "git",
@@ -16,7 +20,8 @@
 	"bugs": {
 		"url": "https://github.com/SUHackathon/fintech-starter-kit/issues"
 	},
-	"devDependencies": {
-		"http-server": "^0.12.3"
-	}
+	"dependencies": {
+		"express": "^5.0.0-alpha.8"
+	},
+	"devDependencies": {}
 }

@@ -58,31 +58,69 @@ At most hackathons a lot of time is wasted in the initial stages setting up proj
 
 ### 3.1. Overview
 
-You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple single page web applicaiton that will communicate with a serverless function backend & object database hosted on the IBM Cloud.
-
-Serverless functions provide a new compute paradigm that is espcially use full in rapid prototyping environments, as they allow you to develop your application's backend logic as individual blocks of code which run independent of every other block of code in your system. This provides execellent scalability should your hack oneday need to scale up quickly to cater for increased load.
-
-![SU Hackathon 2020](readme/architecture.png)
+You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple sales dashboard as a single page web applicaiton that will communicate with node JS backend. The entire project will be hosted on [Heroku](https://heroku.com).
 
 ### 3.2. Getting Started
 
-TODO - forking instructions
+1. Install the latest versions of the following software on your computer:
+   * [Google Chrome](https://www.google.com/chrome)
+   * [NodeJS](https://nodejs.org/en/)
+   * [Git](https://git-scm.com/)
+   * [VS Code](https://code.visualstudio.com)
+   * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+2. Sign up for a [Heroku account](https://signup.heroku.com/) (if you don't have one already).
+
+3. Fork this repository on GitHub by click the "Use this template" button at the top of the page and following the prompts.
+
+4. Open the project in VS Code, open a new terminal window and run the following command to install the project dependencies.
+```
+npm install
+```
+
+### 3.3. Create Hosted App Environment
+
+1. Log in to the [Heroku App Dashboard](https://dashboard.heroku.com/apps/).
+
+2. Select "Create New App" using the following settings:
+   * App Name = <your-app-name>
+   * Region = Europe
+   * Pipeline = no
+
+3. Set the deployment method to GitHub and connect your GitHub account to automate deployment.
+
+4. Link the project repo to your Heroku account.
+
+5. Enable automatic deploys.
 
 
-### 3.3. Database (Object Storage)
+### 3.4. Test & Deploy
+
+1. Back in VS Code, change the app title in the web/index.html file to the name of your project.
+```html
+<title>My Project Name</title>
+```
+
+2. Commit the change in VS Code's source control tab.
+
+3. Push the change to the repo on GitHub.
+
+4. The app should automatically deploy within 5-minutes.
+
+5. Open the app in a browser:
+```
+https://<your-app-name>.herokuapp.com/
+```
+
+6. If needed, you can also manually redeploy the app by selecting "Deploy Branch" at the bottom of the "Deploy" tab in the [Heroku App Dashboard](https://dashboard.heroku.com/apps/)
+
+### 3.5. Local Development
 
 TODO
 
-
-### 3.4. Back-End (Cloud Functions)
-
-TODO
-
-
-### 3.5. Front-End (Web App)
-
-TODO - pages hosting
-
+heroku login
+heroku local web
+heroku ps:scale web=0
 
 
 ## 4. Additional Info
@@ -91,22 +129,11 @@ This project is a quick start and by no means a definitive source of information
 
 For interest, the following additional resources may be of use to you:
 
-### 4.1. IBM Cloud - Serverless Tutorial
+### 4.1. Heroku
 
-This guide is based on the IBM Cloud [Serverless web application and API](
-https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-serverless-api-webapp) tutorials. Have a look at the rest of their guide if you are interested.
+To learn more about Heroku, refer to their [documentation](https://devcenter.heroku.com/categories/reference) and [getting started guides](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
-### 4.2. IBM Cloud - Service Catalogue
-
-You'll find a host of useful services in the IBM Cloud [Service Catalogue](https://cloud.ibm.com/catalog#services), from AI services to different databases and compute resources.
-
-### 4.3. GitHub Pages - Hosting Static Content
-
-GitHub has added a feature called [GitHub Pages](https://pages.github.com/) to their platform allowing you to publicly host your web app directly from the source code in your repository.
-
-If your project requires dynamic content hosting then consider using the [IBM Cloud Foundry](https://www.ibm.com/cloud/cloud-foundry) service.
-
-### 4.4. Bootstrap 4 - UI Framework
+### 4.2. Bootstrap 4 - UI Framework
 
 [Bootstrap](https://getbootstrap.com/) is a simple open source responsive UI framework for web applications. It has many predefined components and templates. Use the following links to learn more.
 
@@ -114,7 +141,7 @@ If your project requires dynamic content hosting then consider using the [IBM Cl
 * [Template Examples](https://getbootstrap.com/docs/4.5/examples/)
 * [Full Tutorial - W3schools](https://www.w3schools.com/bootstrap4/default.asp)
 
-### 4.5. Modern Web APIs
+### 4.3. Modern Web APIs
 
 The web has in recent years evolved to a point where it can compete head-on and with native applications like you would find on a desktop or smartphone. Web applications has the benefit of allowing you no longer have to build separate Android, iOS and desktop versions of you app. Apps like Slack and VS Code for instance is completely built on web technologies.
 
@@ -125,6 +152,6 @@ The following links provide some examples of how you can leverage these modern w
 * [Web Payments](https://web.dev/payments/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
 
-### 4.6. Mobile Phone Emulation - Chrome
+### 4.4. Mobile Phone Emulation - Chrome
 
-TODO
+Google Chrome has an debugging tool that allows you to view a web app being served from localhost of your computer directly on your mobile phone. This is usefull to trace local issues such as errors that might occur on mobile browsers due to a lower level of browser support than the browswer version running on your computer. The following [article](https://developers.google.com/web/tools/chrome-devtools/remote-debugging) will get you started.
