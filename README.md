@@ -1,4 +1,4 @@
-![SU Hackathon 2020](readme/template_small.png)
+![SU Hackathon 2020](.info/template_small.png)
 
 
 # Welcome to the 2020 Stellenbosch University Hackathon
@@ -83,7 +83,7 @@ npm install
 1. Log in to the [Heroku App Dashboard](https://dashboard.heroku.com/apps/).
 
 2. Select "Create New App" using the following settings:
-   * App Name = <your-app-name>
+   * App Name = your-app-name
    * Region = Europe
    * Pipeline = no
 
