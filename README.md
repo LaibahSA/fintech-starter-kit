@@ -58,7 +58,7 @@ At most hackathons a lot of time is wasted in the initial stages setting up proj
 
 ### 3.1. Overview
 
-You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple sales dashboard as a single page web applicaiton that will communicate with node JS backend. The entire project will be hosted on [Heroku](https://heroku.com).
+You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple sales dashboard as a single page web applicaiton that will communicate with node JS backend. The entire project will be hosted on [Heroku](https://heroku.com), and be automatically deployed to the cloud everytime you check in your source code to the master branch of the project in GitHub.
 
 ### 3.2. Getting Started
 
@@ -126,7 +126,7 @@ https://<your-app-name>.herokuapp.com/
 
 1. Simply press F5 on your keyboard within VS code to run the app locally.
 
-2. This will launch the app automatially using the Heroku CLI on http://localhost:8080 which you can open in a web brower.
+2. This will launch the app automatially using the Heroku CLI on http://localhost:8080 which you can open in a web browser.
 
 
 ## 4. Additional Info
@@ -163,4 +163,4 @@ The following links provide some examples of how you can leverage these modern w
 
 ### 4.4. Mobile Phone Emulation - Chrome
 
-Google Chrome has an debugging tool that allows you to view a web app being served from localhost of your computer directly on your mobile phone. This is usefull to trace local issues such as errors that might occur on mobile browsers due to a lower level of browser support than the browswer version running on your computer. The following [article](https://developers.google.com/web/tools/chrome-devtools/remote-debugging) will get you started.
+Google Chrome has an debugging tool that allows you to view a web app being served from localhost of your computer directly on your mobile phone. This is useful to trace local issues such as errors that might occur on mobile browsers due to a lower level of browser support than the browswer version running on your computer. The following [article](https://developers.google.com/web/tools/chrome-devtools/remote-debugging) will get you started.
