@@ -137,7 +137,9 @@ For interest, the following additional resources may be of use to you:
 
 ### 4.1. Heroku
 
-To learn more about Heroku, refer to their [documentation](https://devcenter.heroku.com/categories/reference) and [getting started guides](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
+To learn more about Heroku, refer to their [documentation](https://devcenter.heroku.com/categories/reference).
+
+Heroku also has support for 3rd party databases through it's [addon catalogue](https://elements.heroku.com/addons). The NodeJS [getting started guide](https://devcenter.heroku.com/articles/getting-started-with-nodejs) will take you through a tutorial to connect to a Postgres database.
 
 ### 4.2. Bootstrap 4 - UI Framework
 
