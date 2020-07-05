@@ -11,7 +11,7 @@
 		"node": "14.x"
 	},
 	"scripts": {
-		"start": "node app/main.js"
+		"debug": "heroku local web --port=8080"
 	},
 	"repository": {
 		"type": "git",

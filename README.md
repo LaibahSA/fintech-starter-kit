@@ -102,7 +102,6 @@ npm install
 
 5. Enable automatic deploys.
 
-
 ### 3.4. Test & Deploy
 
 1. Open the project folder in VS Code, change the app title in the app/web/index.html file to the name of your project.
@@ -125,11 +124,9 @@ https://<your-app-name>.herokuapp.com/
 
 ### 3.5. Local Development
 
-TODO
+1. Simply press F5 on your keyboard within VS code to run the app locally.
 
-heroku login
-heroku local web
-heroku ps:scale web=0
+2. This will launch the app automatially using the Heroku CLI on http://localhost:8080 which you can open in a web brower.
 
 
 ## 4. Additional Info
@@ -149,6 +146,9 @@ To learn more about Heroku, refer to their [documentation](https://devcenter.her
 * [Components](https://getbootstrap.com/docs/4.5/components/)
 * [Template Examples](https://getbootstrap.com/docs/4.5/examples/)
 * [Full Tutorial - W3schools](https://www.w3schools.com/bootstrap4/default.asp)
+* [ChartJS](https://www.chartjs.org/)
+* [Feather Icons Library](https://github.com/feathericons/feather)
+* [Feather Icons Catalogue](https://feathericons.com/)
 
 ### 4.3. Modern Web APIs
 

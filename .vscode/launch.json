@@ -5,13 +5,10 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Start App",
-			"program": "${workspaceFolder}/app/main.js",
+			"name": "Debug Local",
+			"command": "npm run debug",
 			"request": "launch",
-			"skipFiles": [
-				"<node_internals>/**"
-			],
-			"type": "pwa-node"
+			"type": "node-terminal"
 		}
 	]
 }

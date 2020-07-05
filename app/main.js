@@ -20,15 +20,11 @@ app.use(endpoints);
 
 // Handle requests made to files not avaible in the app.
 app.use((req, res) => {
-
 	res.status(404).send('Not found');
 });
 
 // Catch and gracefully respond to unhandled exceptions.
 app.use((err, req, res, next) => {
-
-	console.error(err.stack);
-
 	res.status(500).send('Unhandled exception. Review code for errors.');
 });
 

@@ -7,9 +7,11 @@
  */
 async function pageLoad() {
 
+	// Show the app icons.
+	feather.replace();
+
 	// Query the latest sales data.
 	const data = await loadSalesData();
-	console.log(data)
 
 	// Render the sales in chart and table format.
 	renderSalesTable(data);
@@ -80,14 +82,9 @@ function renderSalesChart(data) {
 		chartValues.push(summary[key]);
 	}
 
-
-
-	feather.replace();
-
-	// Graphs
+	// Render the summary chart using ChartJS.
 	var ctx = document.getElementById('salesChart');
 
-	// eslint-disable-next-line no-unused-vars
 	var salesChart = new Chart(ctx, {
 		type: 'line',
 		data: {
