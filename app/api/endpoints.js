@@ -1,4 +1,3 @@
-// Import endpoint handler functions.
 import getOrderByID from './handlers/getOrderByID.js';
 import getOrders from './handlers/getOrders.js';
 import createOrder from './handlers/createOrder.js';

@@ -1,32 +1,45 @@
-// Import dependencies.
 import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 
+import dotenv from 'dotenv';
+
 import endpoints from './api/endpoints.js';
+import SalesDB from './api/connectors/SalesDB.js';
 
-// Lookup server configuration variables.
-const PORT = process.env.PORT || 8080;
+(async () => {
+	
+	// Lookup server environment configuration variables.
+	dotenv.config();
 
-// Intialise the express web server.
-const app = express();
-app.use(bodyParser.json());
+	// Initialise the database.
+	let salesDB = SalesDB.getInstance();
 
-// Make all static content in the web folder available via their file names.
-app.use(express.static(path.resolve('./app/web')));
+	await salesDB.createTables();
+	await salesDB.insertDefaultData();
 
-// Register API endpoints handlers.
-app.use(endpoints);
-
-// Handle requests made to files not avaible in the app.
-app.use((req, res) => {
-	res.status(404).send('Not found');
-});
-
-// Catch and gracefully respond to unhandled exceptions.
-app.use((err, req, res, next) => {
-	res.status(500).send('Unhandled exception. Review code for errors.');
-});
-
-// Start the web server.
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+	// Intialise the express web server.
+	const app = express();
+	app.use(bodyParser.json());
+	
+	// Make all static content in the web folder available via their file names.
+	app.use(express.static(path.resolve('./app/web')));
+	
+	// Register API endpoints handlers.
+	app.use(endpoints);
+	
+	// Handle requests made to files not avaible in the app.
+	app.use((req, res) => {
+		res.status(404).send('Not found');
+	});
+	
+	// Catch and gracefully respond to unhandled exceptions.
+	app.use((err, req, res, next) => {
+		res.status(500).send('Unhandled exception. Review code for errors.');
+	});
+	
+	// Start the web server.
+	const port = process.env.PORT || 8080;
+	
+	app.listen(port, () => console.log(`Web Server - running on port ${port}`));
+})();

@@ -67,7 +67,6 @@ You can follow the rest of this guide to setup a basic cloud hosted web app. We'
    * [NodeJS](https://nodejs.org/en/)
    * [Git](https://git-scm.com/)
    * [VS Code](https://code.visualstudio.com)
-   * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 2. Sign up for a [Heroku account](https://signup.heroku.com/) (if you don't have one already).
 
@@ -102,7 +101,32 @@ npm install
 
 5. Enable automatic deploys.
 
-### 3.4. Test & Deploy
+### 3.4. Provision Postgres DB
+
+1. In the Heroku dashboard for your app, navigate to the "Resources" tab and select "Find more add-ons".
+
+2. Select "Heroku Postgres"
+
+3. Click "Install Heroku Postgres" using the following settings:
+   * Add-on plan = Hobby Dev-free
+   * App to provision = your-app-name
+
+4. Click "Provision Add-on"
+
+5. Open the Heroku Postgres link in the "Resources" tab.
+
+6. Select the "Settings" tab
+
+7. Click "View Credentials"
+
+8. Copy the URI value
+
+9. Create a file named ".env" in the root of your project directory and paste the URI in the file, prefixed with the variable name "DATABASE_URL=", e.g.
+```
+DATABASE_URL=postgres://username:password@server.eu-west-1.compute.amazonaws.com:5432/test
+```
+
+### 3.5. Test & Deploy
 
 1. Open the project folder in VS Code, change the app title in the app/web/index.html file to the name of your project.
 ```html
@@ -122,7 +146,7 @@ https://<your-app-name>.herokuapp.com/
 
 6. If needed, you can also manually redeploy the app by selecting "Deploy Branch" at the bottom of the "Deploy" tab in the [Heroku App Dashboard](https://dashboard.heroku.com/apps/)
 
-### 3.5. Local Development
+### 3.6. Local Development
 
 1. Simply press F5 on your keyboard within VS code to run the app locally.
 
@@ -141,7 +165,11 @@ To learn more about Heroku, refer to their [documentation](https://devcenter.her
 
 Heroku also has support for 3rd party databases through it's [addon catalogue](https://elements.heroku.com/addons). The NodeJS [getting started guide](https://devcenter.heroku.com/articles/getting-started-with-nodejs) will take you through a tutorial to connect to a Postgres database.
 
-### 4.2. Bootstrap 4 - UI Framework
+### 4.2. Postgres DB
+
+Postgres is a simple SQL database, to learn more about the query syntax refer to their [documentation](https://www.postgresql.org/docs/12/queries-overview.html)
+
+### 4.3. Bootstrap 4 - UI Framework
 
 [Bootstrap](https://getbootstrap.com/) is a simple open source responsive UI framework for web applications. It has many predefined components and templates. Use the following links to learn more.
 
@@ -152,7 +180,7 @@ Heroku also has support for 3rd party databases through it's [addon catalogue](h
 * [Feather Icons Library](https://github.com/feathericons/feather)
 * [Feather Icons Catalogue](https://feathericons.com/)
 
-### 4.3. Modern Web APIs
+### 4.4. Modern Web APIs
 
 The web has in recent years evolved to a point where it can compete head-on and with native applications like you would find on a desktop or smartphone. Web applications has the benefit of allowing you no longer have to build separate Android, iOS and desktop versions of you app. Apps like Slack and VS Code for instance is completely built on web technologies.
 
@@ -163,6 +191,6 @@ The following links provide some examples of how you can leverage these modern w
 * [Web Payments](https://web.dev/payments/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
 
-### 4.4. Mobile Phone Emulation - Chrome
+### 4.5. Mobile Phone Emulation - Chrome
 
 Google Chrome has an debugging tool that allows you to view a web app being served from localhost of your computer directly on your mobile phone. This is useful to trace local issues such as errors that might occur on mobile browsers due to a lower level of browser support than the browswer version running on your computer. The following [article](https://developers.google.com/web/tools/chrome-devtools/remote-debugging) will get you started.

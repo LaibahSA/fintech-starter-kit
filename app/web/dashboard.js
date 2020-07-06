@@ -7,7 +7,7 @@
  */
 async function pageLoad() {
 
-	// Show the app icons.
+	// Load the page icons using feather icons.
 	feather.replace();
 
 	// Query the latest sales data.
@@ -46,9 +46,9 @@ function renderSalesTable(data) {
 
 		html += `
 			<tr>
-				<td>${item.orderNo}</td>
+				<td>${item.orderno}</td>
 				<td>${moment(item.date).format('ddd Do MMM - HH:mm')}</td>
-				<td>${item.amount}</td>
+				<td>${Number(item.amount).toFixed(2)}</td>
 				<td>${item.status}</td>
 			</tr>
 		`;
@@ -82,7 +82,7 @@ function renderSalesChart(data) {
 		chartValues.push(summary[key]);
 	}
 
-	// Render the summary chart using ChartJS.
+	// Render the aggregated sales data using ChartJS.
 	var ctx = document.getElementById('salesChart');
 
 	var salesChart = new Chart(ctx, {

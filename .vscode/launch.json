@@ -6,9 +6,12 @@
 	"configurations": [
 		{
 			"name": "Debug Local",
-			"command": "npm run debug",
+			"program": "${workspaceFolder}/app/main.js",
 			"request": "launch",
-			"type": "node-terminal"
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
 		}
 	]
 }
