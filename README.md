@@ -58,7 +58,7 @@ At most hackathons a lot of time is wasted in the initial stages setting up proj
 
 ### 3.1. Overview
 
-You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple sales dashboard as a single page web applicaiton that will communicate with node JS backend. The entire project will be hosted on [Heroku](https://heroku.com), and be automatically deployed to the cloud everytime you check in your source code to the master branch of the project in GitHub.
+You can follow the rest of this guide to setup a basic cloud hosted web app. We'll be building a simple sales dashboard as a single page web applicaiton that will communicate with Node JS backend and a Postgres database. The entire project will be hosted on [Heroku](https://heroku.com), and be automatically deployed to the cloud everytime you check in your source code to the master branch of the project in GitHub.
 
 ### 3.2. Getting Started
 
